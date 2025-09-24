@@ -1,9 +1,12 @@
-class Manager extends employee {
+import java.util.*;
+
+class Manager extends Employee {
     public Manager(String n, double s, int d, int m, int y) {
         super(n, s, d, m, y);
         secretaryName = "";
     }
 
+    @Override
     public void raiseSalary(double byPercent) {
         // add 1/2% bonus for every year of service
         GregorianCalendar todaysDate = new GregorianCalendar();
